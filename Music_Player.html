@@ -1,0 +1,18 @@
+class Solution:
+    def is_palindrome(self, n):
+        # Convert the number to a string
+        ns = str(n)
+        # Check if the string is the same forwards and backwards
+        if ns == ns[::-1]:
+            return "yes"
+        else:
+            return "no"
+
+# Driver Code
+if __name__ == '__main__':
+    T = int(input())
+    for i in range(T):
+        n = int(input())
+        ob = Solution()
+        ans = ob.is_palindrome(n)
+        print(ans)
