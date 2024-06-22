@@ -1,18 +1,24 @@
-class Solution:
-    def is_palindrome(self, n):
-        # Convert the number to a string
-        ns = str(n)
-        # Check if the string is the same forwards and backwards
-        if ns == ns[::-1]:
-            return "yes"
-        else:
-            return "no"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <div id="imageGallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
 
-# Driver Code
-if __name__ == '__main__':
-    T = int(input())
-    for i in range(T):
-        n = int(input())
-        ob = Solution()
-        ans = ob.is_palindrome(n)
-        print(ans)
+    <script>
+        // Add your JavaScript for image navigation here
+    </script>
+</body>
+</html>
